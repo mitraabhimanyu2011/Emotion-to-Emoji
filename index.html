@@ -16,7 +16,7 @@
   <div class="container">
   
     <center>
-      <h3 class="btn btn-info heading"> EMOTION to EMOJI App
+      <h3 class="btn btn-info heading">EMOTION to EMOJI App
       <br>
       <span>😀</span>
       <span>😜</span>
@@ -31,33 +31,43 @@
 
       <br><br>
 
-      <p style="font-size: 22px;">Take your selfie to generate emoji
+      <p style="font-size: 30px;">My name is David. I am a robot. I shall only speak when you press my special "Predict Emotion" button. Have fun!</p>
+
+      <p style="font-size: 22px;">Take your selfie to generate your expressional emoji!
       	<br>
-        <b style="color: rgb(255, 255, 0)">Are you Happy?</b>
+        <b style="color: rgb(255, 255, 0)">Are you happy?</b>
         <br>
-        <b style="color: rgb(0, 119, 255)">Are you Sad?</b>
+        <b style="color: rgb(0, 38, 255)">Are you sad?</b>
         <br>
-        <b style="color: rgb(212, 39, 39)">Are you Angry?</b>
+        <b style="color: rgb(255, 0, 0)">Are you angry?</b>
         <br>
-        <b style="color:rgb(20, 117, 28)">Are you Disgusted?</b>
+        <b style="color:rgb(25, 131, 11)">Are you disgusted?</b>
       </p>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
 	      <label>Webcam View - </label>
-        <div id="camera"></div>
-        <br><br>
-        <button onclick="take_snapshot()" class="btn-btn-success">Capture Your Emotional Image!</button>
+	      <div id="camera"></div>
+	      <br><br>
+	      <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
       </div>
 
       <div class="col-md-4 col-sm-12 col-xs-12">
-        <label>Prediction 1 - </label>
-        <p class="emotion_name" id="result_emotion_name"></p>
-        <p class="emoji" id="update_emoji"></p>
+	      <label>Prediction 1 - </label>
+	      <p class="emotion_name" id="result_emotion_name"></p>
+	      <p class="emoji" id="update_emoji"></p>
 
-        <label>Prediction 2 - </label>
-        <p class="emotion_name" id="result_emotion_name"></p>
-        <p class="emoji" id="update_emoji"></p>
-      </div>
+	      <label>Prediction 2 - </label>
+	      <p class="emotion_name" id="result_emotion_name2"></p>
+	      <p class="emoji" id="update_emoji2"></p>
+  	  </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+	      <div id="result"></div>
+	      <br><br>
+	      <button onclick="check();" class="btn btn-success">Predict Emotion</button>
+	     </div>
+
     </center>
 
   </div>
@@ -66,5 +76,4 @@
 
   </body>
 </html>
-
  
